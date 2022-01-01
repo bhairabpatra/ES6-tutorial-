@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+<a href="https://javascript.info/async">Promises, async/await</a>
+    
+<h1>How Does Promise work?</h1>
+<p>The Promise represents the completion of an asynchronous operation. It returns a single value based on the operation being rejected or resolved. There are mainly three stages of the Promise, which are shown below:</p>
+
+<img src="https://static.javatpoint.com/tutorial/es6/images/es6-promises.png">
+
+<p>Pending - It is the initial state of each Promise. It represents that the result has not been computed yet.</p>
+
+<p>Fulfilled - It means that the operation has completed.</p>
+
+<p>Rejected - It represents a failure that occurs during computation.</p>
+
+<p>Once a Promise is fulfilled or rejected, it will be immutable. The Promise() constructor takes two arguments that are rejected function and a resolve function. Based on the asynchronous operation, it returns either the first argument or second argument.</p>
+
+
+<pre>const Promise = new Promise((resolve,reject) => {....});  </pre>
+
+<b>Promise Methods</b>
+<p> <b>.then()</b>
+    This method invokes when a Promise is either fulfilled or rejected. This method can be chained for handling the rejection or fulfillment of the Promise. It takes two functional arguments for resolved and rejected. The first one gets invoked when the Promise is fulfilled, and the second one (which is optional) gets invoked when the Promise is rejected.
+    
+    Let's understand with the following example how to handle the Promise rejection and resolution by using .then() method.
+</p>
+<b>.catch()</b>
+<p>
+    It is a great way to handle failures and rejections. It takes only one functional argument for handling the errors.
+    
+    Let's understand with the following example how to handle the Promise rejection and failure by using .catch() method.
+</p>
+</body>
+</html>

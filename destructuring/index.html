@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array destructuring</title>
+</head>
+
+<body>
+    <h1>Array destructuring</h1>
+        <p>Destructuring means to break down a complex structure into simpler parts. With the syntax of destructuring, you
+        can extract smaller fragments from objects and arrays. It can be used for assignments and declaration of a
+        variable.</p>
+
+        <p>Destructuring is an efficient way to extract multiple values from data that is stored in arrays or objects. When
+        destructuring an array, we use their positions (or index) in an assignment</p>
+
+    <pre>
+        var arr = ["Hello", "World"]  
+
+        // destructuring assignment  
+        var [first, second] = arr;  
+
+        console.log(first); // Hello  
+        console.log(second); // World  
+    </pre>
+
+    <h1>Object destructuring</h1>
+    <p>It is similar to array destructuring except that instead of values being pulled out of an array, the properties (or keys) and their corresponding values can be pulled out from an object.</p>
+
+    <p>When destructuring the objects, we use keys as the name of the variable. The variable name must match the property (or keys) name of the object. If it does not match, then it receives an undefined value. This is how JavaScript knows which property of the object we want to assign.</p>
+
+    <p>In object destructuring, the values are extracted by the keys instead of position (or index).</p>
+
+    <p>First, try to understand the basic assignment in object destructuring by using the following example.</p>
+
+
+    <pre>
+    Example - Simple assignment
+    const num = {x: 100, y: 200};  
+    const {x, y} = num;  
+
+    console.log(x); // 100  
+    console.log(y); // 200  
+    </pre>
+</body>
+</html>
